@@ -73,18 +73,18 @@
         bindwiredatas(datas);
         $("#transaction-id").html("Transaction Id is " + data.field_values.order_val_field134.value);
     });
-   /*  function wire(){
-        isWireAppletClicked = true;
-        setTitle("Wire");
-        showFileListGrid(isWireAppletClicked);
-        let data1 = getFundingShieldFiles();
-        bindData(data1);
-        bindDropdown(data1);
-        showeditwire();
-       let datas= wiretextboxdata();
-       bindwiredatas(datas);
-    }
-    wire();  */
+    //  function wire(){
+    //     isWireAppletClicked = true;
+    //     setTitle("Wire");
+    //     showFileListGrid(isWireAppletClicked);
+    //     let data1 = getFundingShieldFiles();
+    //     bindData(data1);
+    //     bindDropdown(data1);
+    //     showeditwire();
+    //    let datas= wiretextboxdata();
+    //    bindwiredatas(datas);
+    // }
+    // wire();  
 
     /*     function bindDropdown(data) {
          let htmlStr = " <div class='custom-select-wrapper'><select style='height:60px;' id='file-type-list'>";

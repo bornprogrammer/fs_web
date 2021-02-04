@@ -12,7 +12,7 @@
      showlender();
      lenderlist();
  }
-/*  initLenderView(); */
+/*   initLenderView(); */ 
 
 
  function lenderlist(){
@@ -31,12 +31,12 @@
     $("#comp_city").html(data.city);
     $("#comp_state").html(data.state);
     $("#comp_zip").html(data.zip);
-    $("#comp_nameval").html(data.name);
+   /*  $("#comp_nameval").html(data.name);
     $("#comp_addval").html(data.address);
     $("#comp_add2val").html(data.address2);
     $("#comp_cityval").html(data.city);
     $("#comp_stateval").html(data.state);  
-    $("#comp_zipcodeval").html(data.zip);
+    $("#comp_zipcodeval").html(data.zip); */
  }
 
 

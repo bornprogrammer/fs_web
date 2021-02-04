@@ -13,6 +13,7 @@ function showFileListGrid(isWireAppletClicked) {
     }
     hideTitleBusinessList();
     hideeditwire();
+    hidelender();
 }
 
 function hideFileListGrid() {
@@ -21,6 +22,8 @@ function hideFileListGrid() {
 
 function showeditwire(){
     $("#wire_edit").show();
+    hideTitleBusinessList();
+    hidelender();
 }
 function hideeditwire(){
     $("#wire_edit").hide();
@@ -28,6 +31,9 @@ function hideeditwire(){
 
 function showlender(){
     $("#lender_list").show();
+    hideeditwire();
+    hideTitleBusinessList();
+    hideFileListGrid();
 }
 function hidelender(){
     $("#lender_list").hide();
@@ -38,6 +44,7 @@ function showTitleBusinessList() {
     $("#business-container").show();
     hideFileListGrid();
     hideeditwire();
+    hidelender();
 }
 
 function hideTitleBusinessList() {

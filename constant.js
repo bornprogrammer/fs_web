@@ -8,7 +8,7 @@ const clientId = "e2c7362f-e973-4ad2-934d-a4ac041cf0d3"; // joel
 
 const tenantId = "5caf13b4-2eb9-4886-ab62-0aebf1073885"; // joel
 
-const faServiceAppletId = "aHR0cHM6Ly84YTA3N2ZhOTViYTIubmdyb2suaW8v";
+const faServiceAppletId = "aHR0cHM6Ly9kMmczNGlxM3NsdXp5Yi5jbG91ZGZyb250Lm5ldA==";
 
 const authorityUrl = "https://login.microsoftonline.com/";
 
