@@ -5,29 +5,30 @@
 </head>
 
 <body>
-    <!-- <button id="test_id">Click</button> -->
+  <!--   <button id="test_id">Click</button>  -->
+    
     <header>
-        <h2 id="title"></h2>
-        <h3 id="transaction-id"></h3>
+        <h2 id="title"class="txt_alin" ></h2>
+        <h3 id="transaction-id" style="font-size: 1.3rem;color: #9B9B9B;"></h3>
     </header>
     <div id="document-container">
         <table id="customers">
         </table>
         <form>
-            <div style="width: auto; margin-top: 50px;">
+            <div id="wire-data" style="width: auto; margin-top: 50px;">
 
 
 
                 <div class="row">
                     <div class="column1">
-
-                        <div class="file-upload-wrapper" data-text="Select your file!">
-                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                        <div class="file-list">
 
                         </div>
+                      
                     </div>
                     <div class="column2">
-                        <div class="file-list">
+                        <div class="file-upload-wrapper" data-text="Select your file!">
+                            <input name="file-upload-field" type="file" class="file-upload-field" value="">
 
                         </div>
                     </div>
@@ -78,6 +79,101 @@
         </div> -->
     </div>
 
+<!--lender info-->
+    <div id="lender-container">
+        <div>
+            <input class="search" id="lender" type="text" name="lender" placeholder="Lender Name" />
+            <input class="search-button" type="button" name="search" value="Search" />
+        </div>
+
+        <div class="lender-list">
+            <table id="lenders">
+            </table>
+        </div>
+    </div>
+
+
+    <div id="wire_edit">
+        <div class="FAContainerForm" >
+            <label class="FAInputLabel">Bank Name</label>
+            <input type="text"  id="bankname" class="CalculatedElement" value="">
+        </div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">Account Number</label>
+            <input type="text"  class="CalculatedElement" id="acc_no" name="" value="">
+        </div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">ABA/Routing Number</label>
+            <input type="text"  class="CalculatedElement" id="routing_no" name="" value="">
+        </div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">Name on Account</label>
+            <input type="text"  class="CalculatedElement" id="acc_name" name="" value="">
+        </div>
+
+    <div class="sc-wireline"></div>
+    <div class="FAContainerForm">
+        <label class="FAInputLabel">Sub-Account Name</label>
+        <input type="text" class="FAInputContainer 
+      " id="" name="" value="">
+    </div>
+    <div class="FAContainerForm">
+        <label class="FAInputLabel">Sub-Account Number</label>
+        <input type="text" class="FAInputContainer 
+        " id="" name="" value="">
+    </div>
+    <div class="sc-wireline"></div>
+    <div class="FAContainerForm">
+        <label class="FAInputLabel">Intemediary Bank Name</label>
+        <input type="text" class="FAInputContainer 
+      " id="" name="" value="">
+    </div>
+    <div class="FAContainerForm">
+        <label class="FAInputLabel">Intemediary Bank Account</label>
+        <input type="text" class="FAInputContainer 
+        " id="" name="" value="">
+    </div>
+    <div class="FAContainerForm">
+    <input type="button" class="upload-button" value="Edit" />
+    <input type="button" class="Cancel" value="Cancel" />
+
+       </div> 
+    </div>
+
+
+    <!-- <div id="lender_list">
+        <div class="FAContainerForm" >
+            <span class="FAInputLabel">Company Name</span>
+            <span class="lender data" id="comp_name"></span>
+
+        </div>
+        <div class="FAContainerForm" >
+            <span class="FAInputLabel">Address 1</span>
+            <span class="lender data" id="comp_add1"></span>
+
+        </div>
+        <div class="FAContainerForm" >
+            <span class="FAInputLabel">Address 2</span>
+            <span class="lender data" id="comp_add2"></span>
+
+        </div>
+        <div class="FAContainerForm" >
+            <span class="FAInputLabel">City</span>
+            <span class="lender data" id="comp_city"></span>
+
+        </div>
+        <div class="FAContainerForm" >
+            <span class="FAInputLabel">State</span>
+            <span class="lender data" id="comp_state"></span>
+
+        </div>
+        <div class="FAContainerForm" >
+            <span class="FAInputLabel">Zip Code</span>
+            <span class="lender data" id="comp_zip"></span>
+
+        </div>
+       </div> -->
+
 
     <div style="display: none;" id="success-alert" class="alert success">
         <span class="closebtn">&times;</span>
@@ -99,10 +195,13 @@
     <script type="text/javascript" src="./utils.js"></script>
     <!-- <script type="text/javascript" src="./azureservice.js"></script> -->
     <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./wire.js"></script>
     <script type="text/javascript" src="./document.js"></script>
     <script type="text/javascript" src="./title.js"></script>
     <script type="text/javascript" src="./file-upload.js"></script>
     <script type="text/javascript" src="./validate.js"></script>
+    <script type="text/javascript" src="./lender.js"></script>
+ 
 </body>
 
 </html>

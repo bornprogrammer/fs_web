@@ -41,6 +41,7 @@ function callGet(url, queryStr, headers, successCallback, errorCallback) {
         url,
         type: "GET",
         headers: headers,
+        data: queryStr,
         dataType: "json"
     }).done(function (data) {
         successCallback(data);

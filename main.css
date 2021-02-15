@@ -1,14 +1,20 @@
-#customers,#business {
+ #customers,#business,#lenders {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   font-size: 0.8rem;
-}
+} 
+ 
 
+
+ 
 #customers td,
 #customers th,
 #business td,
-#business th
+#business th,
+#lenders td,
+#lenders th
+
  {
   border: 1px solid #ddd;
   padding: 8px;
@@ -16,11 +22,11 @@
 
 /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
 
-#customers tr:hover,#business tr:hover {
+#customers tr:hover,#business tr:hover,#lenders tr:hover {
   background-color: #ddd;
 }
 
-#customers th,#business th {
+#customers th,#business th,#lenders th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -77,7 +83,8 @@
 }
 .file-upload-wrapper:after {
   content: attr(data-text);
-  font-size: 18px;
+ /*  font-size: 18px; */
+ font-size: 16px; 
   position: absolute;
   top: 0;
   left: 0;
@@ -92,6 +99,7 @@
   color: #999;
   border-radius: 5px 10px 10px 5px;
   font-weight: 300;
+  font-family: "Proxima Nova",sans-serif;
 }
 .file-upload-wrapper:before {
   content: "Select";
@@ -100,16 +108,17 @@
   right: 0;
   display: inline-block;
   height: 60px;
-  background: #4daf7c;
+  background-color:#7bb873;
   color: #fff;
-  font-weight: 700;
+  /* font-weight: 700; */
   z-index: 25;
   font-size: 16px;
   line-height: 60px;
   padding: 0 15px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   pointer-events: none;
   border-radius: 0 5px 5px 0;
+  font-family: "Proxima Nova",sans-serif;
 }
 .file-upload-wrapper:hover:before {
   background: #3d8c63;
@@ -155,6 +164,10 @@
 .business-list{
   margin-top: 50px;
 }
+
+.lender-list{
+  margin-top: 50px;
+}
 .business-details{
   margin-top: 50px;
 }
@@ -170,13 +183,16 @@ margin-top: 37px;
 }
 /* ------------------------------------------------------------------------------------------------------ */
 .dropbtn1 {
-  background-color: #4CAF50;
+  background-color:#7bb873;
   color: white;
   /* padding: 16px; */
-  padding: 18px 44px 10px 19px;
+ /*  padding: 18px 44px 10px 19px;
+  font-size: 15px; */
+  padding: 26px 24px 16px 14px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font-family: "Proxima Nova",sans-serif;
 }
 
 .dropdown1 {
@@ -190,7 +206,7 @@ margin-top: 37px;
   background-color: #f9f9f9;
   min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 200;
 }
 
 .dropdown1-content a {
@@ -211,17 +227,18 @@ margin-top: 37px;
 }
 
 .row {
-  display: flex;
+ /*  display: flex; */
+ display: -webkit-box;
 }
 
 .column2 {
   
-  padding: -3px 10px 10px 0px;
+  padding: 22px 10px 10px 0px;
  
 }
 .column1 {
  /*  flex: 10%; */
-  padding: 10px 37px 10px 0px;
+ padding: 10px 14px 10px 0px;
    
 }
 #txtInput{
@@ -231,13 +248,14 @@ margin-top: 37px;
 }
 /*---------------------------------------------------------------------------------------*/
 .dropbtn2 {
-  background-color: #4CAF50;
+  background-color: #7ab873;
   color: white;
- /*  padding: 5px; */
- padding: 5px 24px 0px 4px;
+  padding: 5px 24px 0px 4px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font-family: "Proxima Nova",sans-serif;
+ 
 }
 
 .dropdown2 {
@@ -251,7 +269,7 @@ margin-top: 37px;
   background-color: #f9f9f9;
   min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 200;
 }
 
 .dropdown2-content a {
@@ -259,6 +277,7 @@ margin-top: 37px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  
 }
 
 .dropdown2-content a:hover {background-color: #f1f1f1}
@@ -287,8 +306,10 @@ margin-top: 37px;
   transform: rotate(135deg);
   border-left: 0;
   border-bottom: 0;
-  margin-top: -13px;
-  margin-left: 167px;
+  /* margin-top: -13px;
+  margin-left: 167px; */
+  margin-top: -15px;
+  margin-left: 173px;
 }
 .tomsAccLeftPane {
   position: relative;
@@ -303,4 +324,92 @@ margin-top: 37px;
   border-bottom: 0;
   margin-top: -15px;
   margin-left: 58px;
+}
+.url_col{
+  color: #64afe5;
+  text-decoration: none;
+  font-family: "Proxima Nova",sans-serif;
+}
+.txt_col{
+color: #484848 !important;
+text-transform: uppercase;
+background: #F2F3F4;
+font-family: "Proxima Nova",sans-serif;
+}
+.txt_alin{
+font-size: 1.2rem;
+font-weight: bold; 
+font-family: "Proxima Nova",sans-serif;
+}
+.FAInputLabel {
+  font-family: var(--main-font);
+  font-size: 16px;
+  padding-right: 12px;
+  flex: none;
+  width: 125px;
+  text-align: right;
+  color: #9b9b9b;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+}
+
+.CalculatedElement {
+  width: 171px;
+  height: 30px;
+  background-color: #f5f5f6;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #e3e3e3;
+  font-size: 15px;
+  color: var(--title-color);
+  line-height: 30px;
+  padding: 5px 8px 5px 8px;
+  transition: border-color 0.2s;
+}
+.FAContainerForm {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+}
+.sc-wireline {
+  color: #484848;
+  padding: 10px 0px 0px 1px;
+  border-bottom: 1px solid #E0E0E0;
+
+}
+.FAContainerForm .FAInputContainer {
+  width: 171px;
+  height: 30px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #e3e3e3;
+  font-size: 15px;
+  color: var(--title-color);
+  line-height: 30px;
+  padding: 5px 8px 5px 8px;
+  transition: border-color 0.2s;
+}
+.Cancel{
+  margin-left: 15px;
+  min-width: 100px;
+    max-width: 200px;
+    height: 35px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+  background: #FFFFFF !important;
+  border: 1px solid #7bb873 !important;
+  color: #7bb873 !important;
+}
+.lender data{
+  color: #484848;
+  white-space: normal;
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 15px;
 }

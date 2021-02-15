@@ -22,8 +22,9 @@
 // })
 
 function updateEntity(formData) {
+/*     callPost(updateEntityLambdaURL, formData, null, afterUpdateEntity, afterUpdateEntity); */
     formData.type="update_file_status";
-    callPost(updateEntityLambdaURL, formData, null, afterUpdateEntity, afterUpdateEntity);
+    callGet(fundingshieldurl, formData, null, afterUpdateEntity, afterUpdateEntity);
     // let variables = getUpdateEntityRecordVariables(formData.freeagentId, formData.orderFieldName, formData.orderFieldVal);
     // let updateEntityRecordQuery = getUpdateEntityRecordQuery();
     // callGraphQL(updateEntityURLWithHerokuCors, updateEntityRecordQuery, variables, null, (data) => {
@@ -65,24 +66,25 @@ function getUpdateEntityRecordVariables(freeagentId, orderFieldName, orderFieldV
 function getOrderFieldName(fileType) {
     let orderFieldName = "";
     switch (fileType) {
-        case "E & O Insurance":
-            orderFieldName = "order_val_field135";
+        case "E &amp; O Insurance":
+            orderFieldName = "order_val_field161";
             break;
         case "Fidelity Bond/Crimes Policy":
-            orderFieldName = "order_val_field136";
+            orderFieldName = "order_val_field162";
             break;
-        case "CPL":
+            case "CPL Validation":
+            orderFieldName = "order_val_field163";
+            break;
+       /*  case "CPL":
             orderFieldName = "order_val_field137";
             break;
         case "State Licensing":
             orderFieldName = "order_val_field151";
             break;
-        case "CPL Validation":
-            orderFieldName = "";
-            break;
+       
         case "Wire":
             orderFieldName = "order_val_field152";
-            break;
+            break; */
         default:
             break;
     }
@@ -106,11 +108,12 @@ function validateStatus() {
     $(this).closest(".dropdown2").children(".tomsAccLeftPane").css({
         'margin-left': ($(this).closest(".dropdown2").children("a.dropbtn2").width() + 14)
     });
-    // eventData.id = "01dfac76-e732-4352-bdb8-22390e7c9218";
+   /*   eventData.id = "9c257723-2c13-4ccb-a0fd-e7e385d6ea9b"; */
     let data = {
         "freeAgentId": eventData.id,
         "orderFieldName": orderFieldName,
         "orderFieldVal": orderFieldVal
     }
     updateEntity(data);
+    /* initFileList(orderFieldName); */
 }

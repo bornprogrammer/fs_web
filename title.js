@@ -1,6 +1,6 @@
-(function () {
+(function () { 
 
-    let searchedData = null;
+    let searchedData = null; 
 
     hideTitleBusinessList();
 
@@ -9,7 +9,7 @@
         initTitleView();
     });
 
-    // initTitleView();
+   /*   initTitleView();  */
 
     function initTitleView(data) {
         setTitle("Title");
@@ -130,7 +130,7 @@
     }
 
     function buildBusinessGridList(data) {
-        let htmlStr = "<tr><th>Business Name</th><th>Business Address</th><th>Update</th></tr>";
+        let htmlStr = "<tr><th class='txt_col' >Business Name</th><th class='txt_col'>Business Address</th><th class='txt_col'>Update</th></tr>";
         if (data && data instanceof Array && data.length > 0) {
             data.forEach(item => {
                 htmlStr += `<tr><td>${item.name}</td>
@@ -162,14 +162,20 @@
 
         $(".update-address").click(function (ev) {
             let data = searchedData[ev.target.parentElement.parentElement.rowIndex - 1];
-            data["freeAgentId"] = eventData.id;
+          /*   eventData.id="36c1cd13-2cf2-4f1e-9cf5-ca51b02932e0"; */
+           data["freeAgentId"] = eventData.id;
+        
+
             console.log(data);
             updateAddressToFS(data);
         })
     }
 
     function updateAddressToFS(addressData) {
-        callPost(updateAddressFSLambdaURL, addressData, null, afterUpdateEntity, afterUpdateEntity);
+        addressData.type="update_company_details";
+
+       /*  callPost(updateAddressFSLambdaURL, addressData, null, afterUpdateEntity, afterUpdateEntity); */
+       callGet(fundingshieldurl, addressData, null, afterUpdateEntity, afterUpdateEntity);
     }
 
     function afterUpdateEntity() {
