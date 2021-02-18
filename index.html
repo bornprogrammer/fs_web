@@ -5,10 +5,10 @@
 </head>
 
 <body>
-  <!--   <button id="test_id">Click</button>  -->
-    
+    <!--   <button id="test_id">Click</button>  -->
+
     <header>
-        <h2 id="title"class="txt_alin" ></h2>
+        <h2 id="title" class="txt_alin"></h2>
         <h3 id="transaction-id" style="font-size: 1.3rem;color: #9B9B9B;"></h3>
     </header>
     <div id="document-container">
@@ -24,7 +24,7 @@
                         <div class="file-list">
 
                         </div>
-                      
+
                     </div>
                     <div class="column2">
                         <div class="file-upload-wrapper" data-text="Select your file!">
@@ -55,7 +55,7 @@
 
 
                 <div style="margin-top: 30px;">
-                    <input type="button" class="upload-button" value="Submit" />
+                    <input type="button" class="upload-button1" value="Submit" />
                 </div>
             </div>
         </form>
@@ -79,7 +79,7 @@
         </div> -->
     </div>
 
-<!--lender info-->
+    <!--lender info-->
     <div id="lender-container">
         <div>
             <input class="search" id="lender" type="text" name="lender" placeholder="Lender Name" />
@@ -94,51 +94,278 @@
 
 
     <div id="wire_edit">
-        <div class="FAContainerForm" >
+        <div class="FAContainerForm">
             <label class="FAInputLabel">Bank Name</label>
-            <input type="text"  id="bankname" class="CalculatedElement" value="">
+            <input type="text" id="bankname" class="CalculatedElement" value="">
         </div>
         <div class="FAContainerForm">
             <label class="FAInputLabel">Account Number</label>
-            <input type="text"  class="CalculatedElement" id="acc_no" name="" value="">
+            <input type="text" class="CalculatedElement" id="acc_no" name="" value="">
         </div>
         <div class="FAContainerForm">
             <label class="FAInputLabel">ABA/Routing Number</label>
-            <input type="text"  class="CalculatedElement" id="routing_no" name="" value="">
+            <input type="text" class="CalculatedElement" id="routing_no" name="" value="">
         </div>
         <div class="FAContainerForm">
             <label class="FAInputLabel">Name on Account</label>
-            <input type="text"  class="CalculatedElement" id="acc_name" name="" value="">
+            <input type="text" class="CalculatedElement" id="acc_name" name="" value="">
         </div>
 
-    <div class="sc-wireline"></div>
-    <div class="FAContainerForm">
-        <label class="FAInputLabel">Sub-Account Name</label>
-        <input type="text" class="FAInputContainer 
+        <div class="sc-wireline"></div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">Sub-Account Name</label>
+            <input type="text" class="FAInputContainer 
       " id="" name="" value="">
-    </div>
-    <div class="FAContainerForm">
-        <label class="FAInputLabel">Sub-Account Number</label>
-        <input type="text" class="FAInputContainer 
+        </div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">Sub-Account Number</label>
+            <input type="text" class="FAInputContainer 
         " id="" name="" value="">
-    </div>
-    <div class="sc-wireline"></div>
-    <div class="FAContainerForm">
-        <label class="FAInputLabel">Intemediary Bank Name</label>
-        <input type="text" class="FAInputContainer 
+        </div>
+        <div class="sc-wireline"></div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">Intemediary Bank Name</label>
+            <input type="text" class="FAInputContainer 
       " id="" name="" value="">
-    </div>
-    <div class="FAContainerForm">
-        <label class="FAInputLabel">Intemediary Bank Account</label>
-        <input type="text" class="FAInputContainer 
+        </div>
+        <div class="FAContainerForm">
+            <label class="FAInputLabel">Intemediary Bank Account</label>
+            <input type="text" class="FAInputContainer 
         " id="" name="" value="">
-    </div>
-    <div class="FAContainerForm">
-    <input type="button" class="upload-button" value="Edit" />
-    <input type="button" class="Cancel" value="Cancel" />
+        </div>
+        <div class="FAContainerForm">
+            <input type="button" class="upload-button1" value="Edit" />
+            <input type="button" class="Cancel" value="Cancel" />
 
-       </div> 
+        </div>
     </div>
+
+    <!--Ravi-->
+
+
+    <div id="closingagent-form">
+        <div class="row">
+            <div class="col-md-3 FAContainerForm">
+                <label class="FAInputLabel">Company Name</label>
+                <input type="text" id="form_CompanyName" class="CalculatedElement" value="" readonly
+                    placeholder="Add company name">
+                <span class="form-field-span">This field is required</span>
+            </div>
+
+            <div class="col-md-9 FAContainerForm">
+                <label class="FAInputLabel">Contact Email</label>
+                <input type="text" class="CalculatedElement" id="form_ContactEmail" name="" value="" readonly
+                    placeholder="Add contact email">
+                <span class="form-field-span">This field is required</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 FAContainerForm">
+                <label class="FAInputLabel">Phone</label>
+                <input type="text" class="CalculatedElement" id="form_Phone" name="" value="" readonly
+                    placeholder="Add phone number">
+                <span class="form-field-span">This field is required</span>
+            </div>
+            <div class="col-md-9 FAContainerForm">
+                <label class="FAInputLabel">Address</label>
+                <input type="text" class="CalculatedElement" id="form_Address" name="" value="" readonly
+                    placeholder="Add address line 1">
+                <span class="form-field-span">This field is required</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 FAContainerForm">
+                <label class="FAInputLabel">Address2</label>
+                <input type="text" class="CalculatedElement" id="form_Address2" name="" value="" readonly
+                    placeholder="Add address line 2">
+                <span class="form-field-span">This field is required</span>
+            </div>
+            <div class="col-md-9 FAContainerForm">
+                <label class="FAInputLabel">City</label>
+                <input type="text" class="CalculatedElement" id="form_City" name="" value="" readonly
+                    placeholder="Add city">
+                <span class="form-field-span">This field is required</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 FAContainerForm">
+                <label class="FAInputLabel">State</label>
+                <!--<input type="text"  class="CalculatedElement" id="CA_State" name="" value="" readonly placeholder="Select">-->
+                <select class="CalculatedElement custom-select" id="form_State" disabled>
+                    <option value="0" disabled selected>Select state</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming"> Wyoming</option>
+                </select>
+                <span class="form-field-span">This field is required</span>
+            </div>
+            <div class="col-md-9 FAContainerForm">
+                <label class="FAInputLabel">Zip</label>
+                <input type="text" class="CalculatedElement" id="form_Zip" name="" value="" readonly
+                    placeholder="Add zip code">
+                <span class="form-field-span">This field is required</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 FAContainerForm">
+                <label class="FAInputLabel">Website</label>
+                <input type="text" class="CalculatedElement" id="form_Website" name="" value="" readonly
+                    placeholder="Add website">
+                <span class="form-field-span">This field is required</span>
+            </div>
+
+        </div>
+        <div class="row margin-top25 margin-left30" id="readonlyClosingAgentFormBtn">
+            <div class="col-md-12 FAContainerForm">
+                <input type="button" class="upload-button1" value="Create New" onclick="initCreateCloseAgentView()" />
+                <input type="button" class="Cancel" value="Find Closing Agent" onclick="initClosingAgentTableView()" />
+            </div>
+        </div>
+
+        <div class="row margin-top25 margin-left30" id="createClosingAgentFormBtn">
+            <div class="col-md-12 FAContainerForm">
+                <input type="button" class="upload-button1" value="Create" onclick="saveClosingAgent()" />
+                <input type="button" class="Cancel" value="Cancel" onclick="showReadonlyClosingAgentForm()" />
+            </div>
+        </div>
+
+    </div>
+
+    <div id="closingagent-table" class="closingagent-container">
+        <div class="row">
+            <div class="col-md-3 FAContainerForm">
+                <select class="FAInputContainer custom-select" id="tblselect-state">
+                    <option value="0" disabled selected>Select State</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delaware</option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option></option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Louisiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+                    <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+                    <option>Pennsylvania</option>
+                    <option>Rhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option> Wyoming</option>
+                </select>
+            </div>
+
+            <div class="col-md-3 FAContainerForm">
+                <input class="FAInputContainer margin-left15" type="text" id="tblsearch-text" name="company name"
+                    placeholder="Company Name" />
+            </div>
+            <div class="col-md-3 FAContainerForm">
+                <input class="upload-button1 margin-left15" type="button" name="find" value="Find" id="search-button" />
+            </div>
+
+        </div>
+
+        <div class="closingagent-list">
+            <table id="tblclosingagent">
+            </table>
+        </div>
+
+        <div class="row margin-top25" id="closingagent-table-btn">
+            <div class="col-md-12 FAContainerForm">
+                <input type="button" class="upload-button1" value="Update" onclick="bindReadOnlyClosingAgentForm()" />
+                <input type="button" class="Cancel" value="Cancel"
+                    onclick="cancelBtnToShowReadonlyClosingAgentForm()" />
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--Ravi-->
 
 
     <!-- <div id="lender_list">
@@ -201,7 +428,12 @@
     <script type="text/javascript" src="./file-upload.js"></script>
     <script type="text/javascript" src="./validate.js"></script>
     <script type="text/javascript" src="./lender.js"></script>
- 
+
+    <!--Ravi-->
+    <script type="text/javascript" src="./closingagent-general.js"></script>
+    <script type="text/javascript" src="./closingagent-add-form.js"></script>
+    <script type="text/javascript" src="./closingagent-table.js"></script>
+
 </body>
 
 </html>

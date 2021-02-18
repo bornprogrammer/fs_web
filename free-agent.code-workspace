@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\HCI-Plus"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FundingShieldFileListing"
+	}
+}

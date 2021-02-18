@@ -9,7 +9,7 @@
         initTitleView();
     });
 
-   /*   initTitleView();  */
+   //initTitleView();
 
     function initTitleView(data) {
         setTitle("Title");
